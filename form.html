@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <section class="page-logo">
+        <a href="./index.html" title="Мишка главная">
+          <img
+            src="http://placehold.it/150x100"
+            width="150"
+            height="100"
+            alt="Магазин Мишка">
+        </a>
+      </section>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__toggler">Открыть меню</div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+            <a href="./catalog.html" title="Каталог товаров">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="./form.html" title="Вязяние на заказ">
+                Вязяние на заказ
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#site-search" title="Поиск по сайту">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#basket" title="Корзина">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="page-title">
+        <h1>Вязание на заказ</h1>
+      </section>
+    </header>
+
+    <main class="page-main">
+
+      <section class="order">
+
+        <div class="order__wrapper">
+          <header class="order__header">
+            <p class="order__description">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+              форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+            </p>
+          </header>
+
+          <form
+            class="order__form form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+
+            <fieldset class="form__order-type">
+              <legend>Тип</legend>
+
+              <input
+                id="accessory-for-interior"
+                type="radio"
+                name="type"
+                value="accessory-for-interior"
+                checked
+              >
+              <label for="accessory-for-interior">
+                Аксессуар для интерьера
+              </label>
+
+              <input
+                id="child-toy"
+                type="radio"
+                name="type"
+                value="child-toy"
+              >
+              <label for="child-toy">Детская игрушка</label>
+
+            </fieldset>
+
+            <fieldset class="form__order-color">
+              <legend>Цвет</legend>
+              <input
+                id="white"
+                type="checkbox"
+                name="color"
+                value="white"
+                checked
+              >
+              <label for="white">Белый</label>
+              <input
+                id="grey"
+                type="checkbox"
+                name="color"
+                value="grey"
+                checked
+              >
+              <label for="grey">Серый</label>
+              <input id="tiffany" type="checkbox" name="color" value="tiffany">
+              <label for="tiffany">"Тиффани"</label>
+              <input id="black" type="checkbox" name="color" value="black">
+              <label for="black">Черный</label>
+              <input id="pink" type="checkbox" name="color" value="pink">
+              <label for="pink">Розовый</label>
+              <input id="orange" type="checkbox" name="color" value="orange">
+              <label for="orange">Оранжевый</label>
+            </fieldset>
+
+            <fieldset class="form__order-person">
+              <legend>Фио</legend>
+
+              <label for="first-name">Имя:</label>
+              <input
+                id="first-name"
+                type="text"
+                name="first-name"
+                placeholder="Введите ваше имя*"
+                required
+              >
+
+              <label for="second-name">Фамилия:</label>
+              <input
+                id="second-name"
+                type="text"
+                name="second-name"
+                placeholder="Введите вашу фамилию*"
+                required
+              >
+
+              <label for="third-name">Отчество:</label>
+              <input
+                id="third-name"
+                type="text"
+                name="third-name"
+                placeholder="Отчество, если желаете"
+              >
+            </fieldset>
+
+            <fieldset class="form__order-telephone">
+
+              <legend>Тeл</legend>
+              <input
+                type="tel"
+                name="telephone"
+                pattern="+[0-9]{1} [0-9]{3} [0-9]{2} [0-9]{2}"
+                placeholder="+7 XXX XX XX*"
+                required
+              >
+
+            </fieldset>
+
+            <fieldset class="form__order-email">
+              <legend>E-mail</legend>
+              <input
+                type="email"
+                name="email"
+                placeholder="Ваш Email*"
+                required
+              >
+            </fieldset>
+
+            <fieldset class="form__order-additional">
+              <legend>Доп</legend>
+              <textarea
+                name="additional"
+                cols="30"
+                rows="5"
+                placeholder="Опишите все ваши пожелания по заказу"
+              ></textarea>
+            </fieldset>
+
+            <div class="form__order-info">
+              <sup>*</sup>
+              Поля обязательны для заполнения
+            </div>
+
+
+            <input
+              class="form__submit-button button"
+              type="submit"
+              value="Отправить заказ"
+            >
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+
+        <div class="page-footer__social social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a
+                class="social-links__link social-links__link--instagram"
+                href="https://www.instagram.com/mimimishka"
+                title="Мы в Instagram"
+              >
+                <span class="social_links__item-description--hidden">
+                  Мы в Instagram
+                </span>
+              </a>
+            </li>
+
+            <li class="social-links__item">
+              <a
+                class="social-links__link social-links__link--facebook"
+                href="https://www.facebook.com/mimimishka"
+                title="Мы в Facebook"
+              >
+                <span class="social_links__item-description--hidden">
+                  Мы в Facebook
+                </span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                class="social-links__link social-links__link--twitter"
+                href="https://www.twitter.com/mimimishka"
+                title="Мы в Twitter"
+              >
+                <span class="social_links__item-description--hidden">
+                  Мы в Twitter
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          Разработано
+          <a
+            class="page-footer__copyright-link button"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

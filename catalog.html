@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <section class="page-logo">
+        <a href="./index.html" title="Мишка главная">
+          <img
+            src="http://placehold.it/150x100"
+            width="150"
+            height="100"
+            alt="Магазин Мишка">
+        </a>
+      </section>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__toggler">Открыть меню</div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+            <a href="./catalog.html" title="Каталог товаров">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="./form.html" title="Вязяние на заказ">
+                Вязяние на заказ
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#site-search" title="Поиск по сайту">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#basket" title="Корзина">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="page-title">
+        <h1>Каталог товаров</h1>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <ul class="catalog__list">
+
+            <li class="catalog__item">
+
+              <div class="catalog__item-picture">
+                <img
+                  src="http://placehold.it/150x100"
+                  width="150"
+                  height="100"
+                  alt="Зайчик попрыгайчик">
+              </div>
+
+              <div class="catalog__item-title">
+                <h1>Зайчик попрыгайчик</h1>
+              </div>
+
+              <div class="catalog__item-description">
+                <p>
+                  Рост 30 см, вес 200 г
+                </p>
+              </div>
+
+              <div class="catalog__item-price">
+                1 200 руб.
+              </div>
+
+            </li>
+
+            <li class="catalog__item">
+
+              <div class="catalog__item-picture">
+                <img
+                  src="http://placehold.it/150x100"
+                  width="150"
+                  height="100"
+                  alt="Корзинка для белья">
+              </div>
+
+              <div class="catalog__item-title">
+                <h1>Корзинка для белья</h1>
+              </div>
+
+              <div class="catalog__item-description">
+                <p>
+                  Диаметр 15 см, высота 10 см
+                </p>
+              </div>
+
+              <div class="catalog__item-price">
+                690 руб.
+              </div>
+
+            </li>
+
+            <li class="catalog__item">
+
+              <div class="catalog__item-picture">
+                <img
+                  src="http://placehold.it/150x100"
+                  width="150"
+                  height="100"
+                  alt="Большая корзинка для игрушек">
+              </div>
+
+              <div class="catalog__item-title">
+                <h1>Большая корзинка для игрушек</h1>
+              </div>
+
+              <div class="catalog__item-description">
+                <p>
+                  Диаметр 30 см, высота 30 см
+                </p>
+              </div>
+
+              <div class="catalog__item-price">
+                1 500 руб.
+              </div>
+
+            </li>
+
+          </ul>
+
+          <article class="order-video">
+            <header>
+              <h1>Процесс производства</h1>
+            </header>
+
+            <div class="order-video__video">
+              <video
+                width="150"
+                height="100"
+                preload="metadata"
+                poster="http://placehold.it/150x100">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogv" type="video/ogg">
+                <source src="video.webm" type="video/webm">
+              </video>
+            </div>
+
+            <div class="order-video__description">
+              <p>
+                По просьбам наших любимых фолловеров мы сняли для вас подробное
+                видео о том, как появляются наши товары
+              </p>
+            </div>
+
+            <a
+              class="order-video__order-button button"
+              href="./form.html"
+              title="Сделать заказ">
+              Сделать заказ
+            </a>
+
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+
+        <div class="page-footer__social social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a
+                class="social-links__link social-links__link--instagram"
+                href="https://www.instagram.com/mimimishka"
+                title="Мы в Instagram"
+              >
+                <span class="social_links__item-description--hidden">
+                  Мы в Instagram
+                </span>
+              </a>
+            </li>
+
+            <li class="social-links__item">
+              <a
+                class="social-links__link social-links__link--facebook"
+                href="https://www.facebook.com/mimimishka"
+                title="Мы в Facebook"
+              >
+                <span class="social_links__item-description--hidden">
+                  Мы в Facebook
+                </span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                class="social-links__link social-links__link--twitter"
+                href="https://www.twitter.com/mimimishka"
+                title="Мы в Twitter"
+              >
+                <span class="social_links__item-description--hidden">
+                  Мы в Twitter
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          Разработано
+          <a
+            class="page-footer__copyright-link button"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
