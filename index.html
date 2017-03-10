@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <section class="page-logo">
-        <a href="./index.html" title="Мишка главная">
-          <img
-            src="http://placehold.it/150x100"
-            width="150"
-            height="100"
-            alt="Магазин Мишка">
-        </a>
-      </section>
+      <a class="page-logo" href="index.html" title="Мишка главная">
+        <img
+          src="img/logo-mobile.svg"
+          width="457"
+          height="146"
+          alt="Магазин Мишка"
+        >
+      </a>
       <nav class="main-nav main-nav--closed">
-        <div class="main-nav__toggler">Открыть меню</div>
+        <input class="main-nav__toggler" id="main-nav__toggler" type="checkbox">
+        <label class="main-nav__toggler-label" for="main-nav__toggler">
+          Mеню
+        </label>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
             <a href="./catalog.html" title="Каталог товаров">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
@@ -37,9 +40,7 @@
         </div>
       </nav>
 
-      <section class="page-title">
-        <h1>Милые штучки ручной работы</h1>
-      </section>
+      <h1 class="page-title">Милые штучки ручной работы</h1>
 
       <section class="page-catalog">
         <ul class="page-catalog__list">
@@ -73,7 +74,7 @@
       <section class="featured-product">
 
         <header class="featured-product__header">
-          <h1>Вязанные корзинки</h1>
+          <h2>Вязанные корзинки</h2>
           <p>Товар недели</p>
         </header>
 
@@ -138,9 +139,8 @@
       </section>
 
       <section class="about-us">
-        <header class="about-us__header">
-          <h1>Коротко о нас:</h1>
-        </header>
+
+        <h2 class="about-us__header">Коротко о нас:</h2>
 
         <ul class="about-us__advantages-list">
           <li class="about-us__advantages-item">
@@ -220,9 +220,8 @@
       </section>
 
       <section class="reviews">
-        <header class="reviews__header">
-          <h1>Отзывы</h1>
-        </header>
+
+        <h2 class="reviews__header">Отзывы</h2>
 
         <div class="reviews__wrapper slider">
           <blockquote class="reviews__item slider__item">
@@ -267,9 +266,8 @@
       </section>
 
       <section class="contacts">
-        <header class="contacts__header">
-          <h1>Контакты</h1>
-        </header>
+
+        <h2 class="contacts__header">Контакты</h2>
 
         <ul class="contacts__list">
           <li class="contacts__item">
