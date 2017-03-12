@@ -1,12 +1,27 @@
+$logo-height: 79px;
+
 .page-logo {
+  display: block;
+
+  width: 100%;
+  height: $logo-height;
+
+  line-height: $logo-height;
+  text-align: center;
+
   background-color: white;
 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+
   img {
-    display: block;
     margin: auto;
 
     width: 86px;
     height: 35px;
+
+    vertical-align: middle;
 
   }
 }
