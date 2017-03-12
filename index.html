@@ -15,32 +15,37 @@
           alt="Магазин Мишка"
         >
       </a>
-      <nav class="main-nav main-nav--closed">
-        <input class="main-nav__toggler" id="main-nav__toggler" type="checkbox">
-        <label class="main-nav__toggler-label" for="main-nav__toggler">
+      <nav class="main-nav main-nav--open">
+        <input
+          class="main-nav__toggler"
+          id="main-nav__toggler"
+          type="checkbox">
+        <label
+          class="main-nav__toggler-label"
+          for="main-nav__toggler">
           Mеню
         </label>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+        <ul class="main-nav__list main-nav__list--open">
+          <li class="main-nav__item">
             <a href="./catalog.html" title="Каталог товаров">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="./form.html" title="Вязяние на заказ">
-                Вязяние на заказ
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#site-search" title="Поиск по сайту">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#basket" title="Корзина">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="main-nav__item">
+            <a href="./form.html" title="Вязяние на заказ">
+              Вязяние на заказ
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--icon-search">
+            <a href="#site-search" title="Поиск по сайту">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav__item--icon-cart">
+            <a href="#basket" title="Корзина">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
 
-      <h1 class="page-title">Милые штучки ручной работы</h1>
+      <h1 class="page-title">
+        Милые штучки ручной работы для дома
+      </h1>
 
       <section class="page-catalog">
         <ul class="page-catalog__list">
