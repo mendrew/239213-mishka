@@ -1,0 +1,121 @@
+$item-height: 79px;
+$icon-width: 25px;
+$icon-margin: $icon-width;
+
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// 2010 Improved NIR (Nash Image Replacement)
+// http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
+@mixin image-replacement($image-url) {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    &:before {
+      content: url($image-url);
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+    }
+}
+
+@mixin add-menu-icon($icon-url) {
+  &:before {
+    display: block;
+    float: left;
+    height: $item-height;
+    width: $icon-width;
+    margin-left: $icon-margin;
+
+    background-image: url($icon-url);
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: grey;
+    content: "";
+  }
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__list {
+  width: 100%;
+  padding: 0;
+
+  &--open {
+    display: none;
+  }
+}
+
+.main-nav__item {
+  display: block;
+  width: 100%;
+  height: $item-height;
+
+  list-style-type: none;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+
+
+  a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    padding-left: 74px;
+
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    line-height: $item-height;
+    color: black;
+
+    text-decoration: none;
+
+    &:hover {
+      color: transparentize(black, 0.3);
+    }
+
+    &:active {
+      color: transparentize(black, 0.6);
+    }
+  }
+
+  &--icon-search {
+    @include add-menu-icon("../img/icon-search.svg");
+  }
+
+  &--icon-cart {
+    @include add-menu-icon("../img/icon-cart.svg");
+  }
+}
+
+.main-nav__toggler {
+}
+
+.main-nav__toggler-label {
+
+  &--open {
+    @include image-replacement("../img/icon-menu-open.svg");
+  }
+
+  &--close {
+    @include image-replacement("../img/icon-menu-close.svg");
+  }
+}
