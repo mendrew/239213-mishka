@@ -1,27 +1,16 @@
-$logo-height: 79px;
-
 .page-logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  width: 100%;
-  height: $logo-height;
-
-  line-height: $logo-height;
-  text-align: center;
+  width: 320px;
+  height: 79px;
 
   background-color: white;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
+  box-shadow: 0 1px 0 0 #ececec;
 
   img {
-    margin: auto;
-
     width: 86px;
     height: 35px;
-
-    vertical-align: middle;
-
   }
 }
