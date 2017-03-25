@@ -15,30 +15,44 @@
           alt="Магазин Мишка"
         >
       </a>
-      <nav class="main-nav main-nav--open">
+      <nav class="main-nav">
         <input
-          class="main-nav__toggler"
+          class="main-nav__toggler main-nav__toggler-box"
           id="main-nav__toggler"
           type="checkbox">
         <label
-          class="main-nav__toggler-label"
+          class="main-nav__toggler main-nav__toggler-label"
           for="main-nav__toggler">
           Mеню
         </label>
-        <ul class="main-nav__list main-nav__list--open">
+        <ul class="main-nav__list main-nav__list--close">
           <li class="main-nav__item">
-            <a href="./catalog.html" title="Каталог товаров">Каталог товаров</a>
+            <a href="./catalog.html" title="Каталог товаров">
+              <span class="main-nav__item-title">
+                Каталог товаров
+              </span>
+            </a>
           </li>
           <li class="main-nav__item">
             <a href="./form.html" title="Вязяние на заказ">
-              Вязяние на заказ
+              <span class="main-nav__item-title">
+                Вязяние на заказ
+              </span>
             </a>
           </li>
           <li class="main-nav__item main-nav__item--icon-search">
-            <a href="#site-search" title="Поиск по сайту">Поиск по сайту</a>
+            <a href="#site-search" title="Поиск по сайту">
+              <span class="main-nav__item-title">
+                Поиск по сайту
+              </span>
+            </a>
           </li>
           <li class="main-nav__item main-nav__item--icon-cart">
-            <a href="#basket" title="Корзина">Корзина: пока пуста</a>
+            <a href="#basket" title="Корзина">
+              <span class="main-nav__item-title">
+                Корзина: пока пуста
+              </span>
+            </a>
           </li>
         </ul>
       </nav>
