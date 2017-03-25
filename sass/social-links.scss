@@ -1,2 +1,37 @@
 .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.social-links__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.social-links__link {
+  &--instagram {
+    @include image-replacement("../img/icon-insta.svg");
+  }
+
+  &--facebook {
+    @include image-replacement("../img/icon-fb.svg");
+  }
+
+  &--twitter {
+    @include image-replacement("../img/icon-twitter.svg");
+  }
 }
