@@ -13,24 +13,6 @@ $icon-margin: $icon-width;
   width: 1px;
 }
 
-// 2010 Improved NIR (Nash Image Replacement)
-// http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
-@mixin image-replacement($image-url) {
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-
-    &:before {
-      content: url($image-url);
-      display: inline-block;
-      font-size: 0;
-      line-height: 0;
-    }
-}
-
 @mixin add-menu-icon($icon-url) {
   &:before {
     position: absolute;
