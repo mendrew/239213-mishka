@@ -69,7 +69,6 @@
 .form input[type=checkbox] {
   display: none;
 }
-
 .form input[type=checkbox] + label {
   position: relative;
   min-height: 50px;
@@ -95,4 +94,54 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
+}
+
+.form input[type=text],
+.form input[type=tel],
+.form input[type=email] {
+  display: block;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form fieldset input:last-child {
+  margin-bottom: 0;
+}
+
+.form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 142px;
+  padding: 18px 17px;
+
+  border: none;
+  border: 2px solid black;
+  resize: none;
+
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form fieldset.form__order-additional {
+  margin-bottom: 18px;
+}
+
+.form__order-info {
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
+
+
+.form input.form__submit-button {
+  width: 100%;
+  margin-bottom: 55px;
 }
