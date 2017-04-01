@@ -1,2 +1,84 @@
 .reviews {
+  @include container;
+  margin-top: 36px;
+  padding-bottom: 44px;
+  margin-bottom: 50px;
+
+  border-bottom: 2px dashed grey;
+}
+
+.reviews__header {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.reviews__wrapper {
+
+}
+
+.reviews__item {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+
+  p {
+    margin: 0;
+  }
+}
+
+.reviews__quote {
+  margin-bottom: 17px;
+  padding-bottom: 53px;
+}
+
+.reviews__autor-name {
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.reviews__autor-tag {
+  padding-bottom: 36px;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.reviews__navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 38px;
+}
+
+.reviews__navigation-button {
+  display: block;
+  min-height: 52px;
+  width: 50%;
+
+  border: 1px solid #ececec;
+
+  &:last-child {
+    border-left: none;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--previous {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
 }

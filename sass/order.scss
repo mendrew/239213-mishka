@@ -1,2 +1,26 @@
 .order {
+  @include container;
+  padding-top: 30px;
+}
+
+.order__header {
+  margin-bottom: 30px;
+}
+
+
+.order__description {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.order__form fieldset {
+  margin-bottom: 36px;
+  padding: 0;
+}
+
+.order__form legend {
+  margin-bottom: 27px;
 }

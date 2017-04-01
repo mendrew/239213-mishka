@@ -1,2 +1,71 @@
 .contacts {
+  padding-bottom: 40px;
+}
+
+.contacts__header {
+  @include container;
+  margin: 0;
+  padding-bottom: 46px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+
+.contacts__list {
+  @include container;
+  margin: 0;
+  margin-bottom: 42px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+
+  list-style-type: none;
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__item-name {
+  flex: initial;
+  width: 78px;
+}
+
+.contacts__item-value {
+
+  &--email {
+    border-bottom: 1px solid #62d1ba;
+  }
+
+}
+
+.contacts__map {
+  position: relative;
+  height: 457px;
+
+  margin-bottom: 40px;
+
+  background-image: url("../img/map-mobile@1x.jpg");
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 123px;
+    top: 145px;
+    z-index: 1;
+
+    display: block;
+    height: 100px;
+    width: 67px;
+
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+
+  }
+}
+
+.contacts__buttons-wrapper {
+  @include container;
 }

@@ -1,6 +1,19 @@
 .page-title {
-  padding: 260px 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  font-size: 90px;
+  box-sizing: border-box;
+  min-height: 178px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 27px;
+  font-weight: bold;
   text-align: center;
+
+  &--main {
+    min-height: 280px;
+  }
 }

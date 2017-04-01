@@ -14,12 +14,10 @@
   font-weight: bold;
 }
 
-@font-face {
-  font-family: 'OpenSans';
-  src:  url('../fonts/opensans.woff2') format('woff2'),
-        url('../fonts/opensans.woff') format('woff');
-}
-
 .page-body {
+  width: 320px;
+
+  margin: 0 auto;
+
   font-family: 'OpenSans', Verdana, sans-serif;
 }

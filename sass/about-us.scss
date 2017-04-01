@@ -1,2 +1,72 @@
 .about-us {
+  @include container;
+  margin-bottom: 36px;
+}
+
+.about-us__header {
+  height: 55px;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about-us__advantages-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin add-advantage-icon($icon-url) {
+  &:before {
+    content: "";
+    display: block;
+
+    width: initial;
+    height: 35px;
+    margin-left: 7px;
+
+    background-image: url($icon-url);
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__advantages-item {
+
+  &--ecology {
+    @include add-advantage-icon("../img/icon-feature-1.svg");
+  }
+
+  &--style {
+    @include add-advantage-icon("../img/icon-feature-3.svg");
+  }
+
+  &--like {
+    @include add-advantage-icon("../img/icon-feature-5.svg");
+  }
+
+  &--clew {
+    @include add-advantage-icon("../img/icon-feature-2.svg");
+  }
+
+  &--rocket {
+    @include add-advantage-icon("../img/icon-feature-4.svg");
+  }
+
+  &--gift {
+    @include add-advantage-icon("../img/icon-feature-6.svg");
+  }
+}
+
+.about-us__advantages-name {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 34px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
 }
