@@ -22,3 +22,24 @@
       line-height: 0;
     }
 }
+
+/// same as image-replacement, but using background-image
+@mixin image-replacement--background($image-url) {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+
+      background-image: url($image-url);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+}
