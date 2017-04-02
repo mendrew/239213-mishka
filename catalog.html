@@ -5,35 +5,56 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <a class="page-logo" href="./index.html" title="Мишка главная">
+      <a class="page-logo" href="index.html" title="Мишка главная">
         <img
-        src="http://placehold.it/150x100"
-        width="150"
-        height="100"
-        alt="Магазин Мишка">
+          src="img/logo-mobile.svg"
+          width="457"
+          height="146"
+          alt="Магазин Мишка"
+        >
       </a>
-      <nav class="main-nav main-nav--closed">
-        <div class="main-nav__toggler">Открыть меню</div>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-            <a href="./catalog.html" title="Каталог товаров">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="./form.html" title="Вязяние на заказ">
+      <nav class="main-nav">
+        <input
+          class="main-nav__toggler main-nav__toggler-box"
+          id="main-nav__toggler"
+          type="checkbox">
+        <label
+          class="main-nav__toggler main-nav__toggler-label"
+          for="main-nav__toggler">
+          Mеню
+        </label>
+        <ul class="main-nav__list main-nav__list--close">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="./catalog.html" title="Каталог товаров">
+              <span class="main-nav__item-title">
+                Каталог товаров
+              </span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="./form.html" title="Вязяние на заказ">
+              <span class="main-nav__item-title">
                 Вязяние на заказ
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#site-search" title="Поиск по сайту">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#basket" title="Корзина">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+              </span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--icon-search">
+            <a href="#site-search" title="Поиск по сайту">
+              <span class="main-nav__item-title">
+                Поиск по сайту
+              </span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--icon-cart">
+            <a href="#basket" title="Корзина">
+              <span class="main-nav__item-title">
+                Корзина: пока пуста
+              </span>
+            </a>
+          </li>
+        </ul>
       </nav>
 
       <h1 class="page-title">Каталог товаров</h1>
@@ -159,7 +180,7 @@
       <div class="page-footer__wrapper">
 
         <div class="page-footer__social social-links">
-          <ul class="social-links__list">
+          <ul class="page-footer__social-list social-links__list">
             <li class="social-links__item">
               <a
                 class="social-links__link social-links__link--instagram"
@@ -198,9 +219,11 @@
         </div>
 
         <div class="page-footer__copyright">
-          Разработано
+          <span class="page-footer__copyright-text">
+            Разработано
+          </span>
           <a
-            class="page-footer__copyright-link button"
+            class="page-footer__copyright-link"
             href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
