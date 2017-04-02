@@ -1,2 +1,74 @@
 .order-video {
+  padding-top: 35px;
+  padding-bottom: 33px;
+  margin-bottom: 58px;
+
+  border: 1px solid #ececec;
+}
+
+.order-video__title {
+  display: flex;
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: black;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 22px;
+
+    margin-left: 24px;
+    margin-right: 25px;
+
+    align-self: center;
+
+    background-image: url("../img/icon-video.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
+}
+
+.order-video__video {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+
+    display: inline-block;
+    width: 102px;
+    height: 78px;
+
+
+    background-image: url("../img/icon-play.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.order-video__description {
+  margin-bottom: 29px;
+  padding-left: 34px;
+  padding-right: 43px;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.order-video__order-button {
+  margin-left: 34px;
+  margin-right: 34px;
 }
